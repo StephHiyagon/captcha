@@ -4,6 +4,7 @@ var check=document.getElementsByClassName('checkmark')[0];
 var final;
 
 function token(event) {
+  text.value="";
   function random() {
       return Math.random().toString(16).substr(2); // Eliminar `0.
   };
@@ -29,6 +30,7 @@ function token(event) {
       console.log(check);
     }else{
       text.value="";
+      location.href="index.html";
     }
   }
   text.onblur=valida;
