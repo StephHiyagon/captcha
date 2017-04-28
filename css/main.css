@@ -35,15 +35,27 @@
   cursor:pointer;
 
 }
+
+.checkmark{
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  position: absolute;
+  top: 68px;
+  left: 16px;
+  overflow: auto;
+  display:none;
+}
 .checkmark:before {
   content: "\ea10";
   font-family: 'ico';
   position: absolute;
-  top: 70px;
-  left:24px;
+  top: 7px;
+  left:12px;
   font-size: 27px;
   color:white;
-  display:none;
+  display:block;
 }
 
 
