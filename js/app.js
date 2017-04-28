@@ -5,7 +5,7 @@ var final;
 
 function token(event) {
   function random() {
-      return Math.random().toString(36).substr(2); // Eliminar `0.
+      return Math.random().toString(16).substr(2); // Eliminar `0.
   };
   console.log(random());
   var tok=random();
@@ -13,6 +13,9 @@ function token(event) {
   var final=tok.toString();
   console.log(final);
   var token=document.getElementById('token');
+  var color=final.substr(0,4);
+  console.log(color);
+  token.style.color= "#ff"+color;
   token.innerHTML= final;
 
   function valida(event){
