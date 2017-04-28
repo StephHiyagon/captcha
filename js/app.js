@@ -1,12 +1,11 @@
 var refresh=document.getElementsByClassName('spinner')[0];
 var text=document.getElementById('text');
 var check=document.getElementsByClassName('checkmark')[0];
-var final;
 
 function token(event) {
   text.value="";
   function random() {
-      return Math.random().toString(16).substr(2); // Eliminar `0.
+      return Math.random().toString(16).substr(2);
   };
   console.log(random());
   var tok=random();
@@ -20,7 +19,6 @@ function token(event) {
   token.innerHTML= final;
 
   function valida(event){
-    // alert("funcion");
     console.log(final);
     if(this.value==final){
       console.log(text.value);
@@ -28,11 +26,11 @@ function token(event) {
       alert("correcto");
       check.style.display="block";
       console.log(check);
-    }else{
+     }else{
       text.value="";
       location.href="index.html";
-    }
-  }
+     }
+   }
   text.onblur=valida;
 };
 
